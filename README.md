@@ -43,7 +43,7 @@ Se propone una aplicación, basada en el siguiente software de carácter tecnol�
 <br/>
 Como soporte a dicha tecnología, se hace uso del servidor de aplicaciones embebido en Spring Boot, un IDE de desarrollo STS (v4.6.0) y una BBDD embebida (H2), que permite la publicación de contenidos, el desarrollo y el almacenamiento de la información respectivamente.
 
-Para el presente proyecto se dispone de un repositorio GitHub (https://github.com/armirde/rooms) donde encontrar:
+Para el presente proyecto se dispone de un repositorio GitHub (https://github.com/caaguila/rooms) donde encontrar:
 *	El proyecto completo tras realizar todos los pasos.
 * Un comprimido con algunas de las aplicaciones necesarias para el desarrollo (JDK, Maven).
 <br/>
