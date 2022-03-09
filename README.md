@@ -360,7 +360,6 @@ CREATE TABLE ROOM (
   name VARCHAR(250) NOT NULL
 );
 ```
-```
 * En este punto ya se puede crear el script de carga incial de datos en el directorio de recursos del proyecto (source.main.resources), denominado "data.sql":
 ```
 insert into room values(1, 'Room 1');
