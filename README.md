@@ -308,6 +308,8 @@ Comprobado que el proyecto se ha creado correctamente, se procede añadir las de
 ```
 * Se debe de incluir la configuracion necesaria de la BBDD en el fichero de propiedades de la aplicación (application.properties):
 ```
+#Database
+spring.jpa.hibernate.ddl-auto=none
 spring.h2.console.enabled=true
 spring.datasource.url=jdbc:h2:mem:testdb
 spring.datasource.driverClassName=org.h2.Driver
@@ -348,6 +350,16 @@ public class Room {
     //getter y setters
 
 }
+```
+* Ahora necesitamos crear el script de definición de la base de datos en el directorio de recursos del proyecto (source.main.resources), denominado "schema.sql":
+```
+DROP TABLE IF EXISTS ROOM;
+
+CREATE TABLE ROOM (
+  id BIGINT IDENTITY NOT NULL PRIMARY KEY,
+  name VARCHAR(250) NOT NULL
+);
+```
 ```
 * En este punto ya se puede crear el script de carga incial de datos en el directorio de recursos del proyecto (source.main.resources), denominado "data.sql":
 ```
